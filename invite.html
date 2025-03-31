@@ -1,0 +1,68 @@
+<!-- The Invite -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailbox Interface</title>
+    <link rel="stylesheet" href="invite.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            Paradox Mail
+        </div>
+        <div class="user-info" id="user-info">User: Agent X</div>
+    </header>
+    <div class="mailbox">
+        <div class="sidebar">
+            <ul>
+                <li class="active" id="unread-tab"><i class="icon">📥</i> Unread</li>
+                <li id="inbox-tab"><i class="icon">📨</i> Inbox</li>
+                <li><i class="icon">📤</i> Sent</li>
+                <li><i class="icon">📝</i> Drafts</li>
+                <li><i class="icon">🗑️</i> Trash</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="unread" class="mail-list active">
+                <h2>Unread</h2>
+                <div class="mail-item" id="mail1">
+                    <div class="mail-sender">Paradox Initiative HQ <span class="mail-id">command@paradox-initiative.org</span></div>
+                    <span class="mail-subject">URGENT: Project Astralis — Immediate Response Required</span>
+                    <span class="mail-status">New</span>
+                    <span class="mail-date" id="mail1-date"></span>
+                </div>
+            </div>
+            <div id="inbox" class="mail-list">
+                <h2>Inbox</h2>
+                <!-- Emails will be moved here after reading -->
+            </div>
+        </div>
+    </div>
+    <div id="mail-popup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="mail-content">
+                <h2 id="email-subject">Subject Line</h2>
+                <p id="email-date">Date</p>
+                <p><strong>From:</strong> <span id="email-from">sender@example.com</span></p>
+                <p><strong>To:</strong> <span id="email-to">recipient@example.com</span></p>
+                <p><strong>Priority Level:</strong> <span id="email-priority">High</span></p>
+                <hr>
+                <div id="email-body">This is the content of the email...</div>
+            </div>
+        </div>
+    </div>
+    <div id="notification" class="notification">
+        <span class="notification-text">New mail received</span>
+        <button class="notification-open">Open</button>
+        <span class="notification-close">&times;</span>
+    </div>
+    <div class="bottom-bar">
+        <div class="date-time" id="date-time"></div>
+    </div>
+    <script src="invite.js"></script>
+</body>
+</html>

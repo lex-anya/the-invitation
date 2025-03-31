@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradox Mail - Project Astralis Login</title>
+    <link rel="stylesheet" href="invite.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Paradox Mail</h1>
+            <h2>Project Astralis Login</h2>
+        </div>
+        <div class="login-form">
+            <label for="agent-id">Agent ID</label>
+            <input type="text" id="agent-id" placeholder="Enter your agent ID" autocomplete="off">
+            <div class="error-message" id="agent-id-error" style="display: none; color: #ff4c4c; margin-top: 10px;">Please ensure there are no spaces in your id.</div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="off">
+            <div class="error-message" id="login-error" style="display: none; color: #ff4c4c; margin-top: 10px;">Please enter the correct password.</div>
+            <button id="login-button" disabled>Log In</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
