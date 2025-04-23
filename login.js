@@ -33,11 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
             sessionStorage.setItem('agentId', agentId);
             window.location.href = 'invite.html';
         } else {
-            // Display error message
             loginError.style.display = 'block';
         }
     });
 
-    // Initial validation check
     validateAgentId();
 });
