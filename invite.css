@@ -40,7 +40,7 @@ body {
     white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%; /* Ensure it takes up available space */
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -48,7 +48,7 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
-    margin-top: 50px; /* Adjust for the fixed header */
+    margin-top: 50px;
 }
 
 .sidebar {
@@ -56,7 +56,7 @@ body {
     background-color: #1e1e1e;
     padding: 20px;
     border-right: 1px solid #333;
-    height: calc(100vh - 50px); /* Adjust for the fixed header */
+    height: calc(100vh - 50px);
     overflow-y: auto;
     box-shadow: 0 0 10px #4CAF50;
     position: relative;
@@ -91,7 +91,7 @@ body {
     padding: 20px;
     overflow-y: auto;
     background-color: #121212;
-    height: calc(100vh - 50px); /* Adjust for the fixed header */
+    height: calc(100vh - 50px);
     box-shadow: 0 0 10px #4CAF50;
 }
 
@@ -140,20 +140,20 @@ body {
 
 .mail-date {
     color: #888;
-    align-self: flex-start; /* Align date to the start (left) */
+    align-self: flex-start;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
@@ -163,8 +163,8 @@ body {
     width: 80%;
     color: #d4d4d4;
     box-shadow: 0 0 20px #4CAF50;
-    max-height: 80%; /* Ensure the modal content doesn't overflow the screen */
-    overflow-y: auto; /* Add scroll if content overflows */
+    max-height: 80%;
+    overflow-y: auto;
 }
 
 .close {
@@ -278,7 +278,7 @@ body {
     font-size: 1.1em;
     width: 100%;
     text-align: left;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .login-form input {
@@ -321,8 +321,8 @@ body {
 
     .user-info {
         margin-top: 10px;
-        max-width: 100%; /* Ensure it takes up available space on smaller screens */
-        white-space: normal; /* Allow text to wrap on smaller screens */
+        max-width: 100%;
+        white-space: normal;
     }
 
     .mailbox {
@@ -334,7 +334,7 @@ body {
         height: auto;
         border-right: none;
         border-bottom: 1px solid #333;
-        overflow-y: auto; /* Ensure the sidebar is scrollable */
+        overflow-y: auto;
     }
 
     .content {
