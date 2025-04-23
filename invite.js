@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getCurrentDateUTC() {
         const now = new Date();
         const day = now.getUTCDate().toString().padStart(2, '0');
-        const month = (now.getUTCMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+        const month = (now.getUTCMonth() + 1).toString().padStart(2, '0');
         const year = now.getUTCFullYear();
         const dayOfWeek = now.getUTCDay(); // Get the day of the week (0-6)
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getDayOfWeekIn2031() {
         // Get the current date
         const currentDay = getCurrentDateUTC().split('/').slice(0, 1);
-        const currentMonth = getCurrentDateUTC().split('/').slice(1, 2); // Note: Months are zero-based (0 = January, 11 = December)
+        const currentMonth = getCurrentDateUTC().split('/').slice(1, 2);
     
         // Create a new date object for the same day and month in the year 2031
         const futureDate = new Date(Date.UTC(2031, currentMonth, currentDay));
